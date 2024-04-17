@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="25.356" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Magicbricks Property Services" name="Rent Receipt form - Example #1.1" time="24.984">
+<system-out><![CDATA[
+Given User is on Magicbricks homepage.......................................passed
+And Hover on property services..............................................passed
+When User clciks on the generate rent receipt...............................passed
+And User fills the rent receipt form with 10000, Navi Mumbai, Aksh, 1, 30, Anish, 9876543210 and Anish@gmail.com.passed
+And User click on the terms and conditions checkbox.........................passed
+And User click on the generate rent receipt now button......................passed
+Then User will get an option to download the rent receipt...................passed
+]]></system-out>
+</testcase>
+</testsuite>
