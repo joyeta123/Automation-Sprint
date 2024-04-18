@@ -18,7 +18,7 @@ public class RentReceiptFactory {
 	WebDriverWait wait;
 	
 //________________________________________________________________________________________________________________________________________________________________________________
-//                                               (Xpaths of Rent Receipt form)
+//                                               (Web Elemnets of Rent Receipt form)
 //________________________________________________________________________________________________________________________________________________________________________________	
 	
 	@FindBy(xpath="(//a[@class=\"mb-header__sub__tabs__link js-menu-link\"])[5]")
@@ -123,7 +123,7 @@ public class RentReceiptFactory {
 	
 	
 //______________________________________________________________________________________________________________________________________________
-//                                         (Xpaths of Enquire Now form)
+//                                         (Web Elemnets of Enquire Now form)
 //______________________________________________________________________________________________________________________________________________
 	
 	
@@ -209,7 +209,7 @@ public class RentReceiptFactory {
 	
 	
 //__________________________________________________________________________________________________________________________________________________
-//                                             (Xpaths of Rent Agreement Form)
+//                                             (Web Elemnets of Rent Agreement Form)
 //__________________________________________________________________________________________________________________________________________________
 	
 	
@@ -316,7 +316,7 @@ public class RentReceiptFactory {
 	
 	
 //__________________________________________________________________________________________________________________________________________________________________________________________________
-//                                             (Xpaths of Home Interiors Form)
+//                                             (Web Elemnets of Home Interiors Form)
 //__________________________________________________________________________________________________________________________________________________________________________________________________
 	
 	
@@ -430,7 +430,7 @@ public class RentReceiptFactory {
 		userMobileNumber.sendKeys(userMobNumber);
 		userEmail.sendKeys(UserEmail);
 		next.click();
-		Thread.sleep(15);
+		Thread.sleep(15000);
 		verify.click();
 	}
 	
@@ -455,9 +455,9 @@ public class RentReceiptFactory {
 		city.click();
 	}
 	
-	public void clickGetFreeEstimate() {
+	public void clickGetFreeEstimate() throws InterruptedException {
 		next.click();
-		wait = new WebDriverWait(driver,Duration.ofSeconds(3));
+		Thread.sleep(3000);
 	}
 	
 	public String messageDisplayed3() {
@@ -467,7 +467,7 @@ public class RentReceiptFactory {
 	
 	
 //________________________________________________________________________________________________________________________________________________________________________________
-//                                             (Xpaths for Bug in Enquiry form)
+//                                             (Web Elemnets for Bug in Enquiry form)
 //________________________________________________________________________________________________________________________________________________________________________________
 	
 	@FindBy(xpath ="//a[@href=\"https://www.magicbricks.com/rentalagreement/\"]")
@@ -523,27 +523,7 @@ public class RentReceiptFactory {
 		EMailField1.sendKeys(yourEmail);
 		ContactMobile1.sendKeys(yourMobNumber);
 	}
-	
-//	public void clickYourName0() {
-//		NameField1.click();
-//	}
-//	
-//	public void clickYourEMail0() {
-//		EMailField.click();
-//	}
-//	
-//	public void clickYourMobileNumber0() {
-//		ContactMobile.click();
-//	}
-//	
-//	public void clickWriteQuestion0() {
-//		question.click();
-//	}
-//	
-//	public void clickSendReuest0() {
-//		sendRequest.click();
-//	}
-	
+		
 	public String messageDisplayed4() {
 		System.out.println(displayedMessage4.getText());
 		return displayedMessage4.getText();	

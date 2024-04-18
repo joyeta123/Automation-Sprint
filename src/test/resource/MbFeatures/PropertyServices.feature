@@ -49,7 +49,7 @@ Background:
 	And User select the layout and size of the kitchen
 	And User select the number and size of the wardrobes
 	And User enter their details with User Name, User Mobile Number and User Email
-	|Joyeta|9209012238|joyetabarman5650@gmail.com|
+	|Joyeta|7029355167|joyetabarman5650@gmail.com|
 	And User selects the interior requirement, time period, budget and city
 	Then User clicks on get free estimate
 	
@@ -61,7 +61,7 @@ Background:
 	Scenario Outline: Enquiry form
 	When User clicks on rent agreement2
 	And User clicks on enquire now for free1
-	And User fills the enquire now form with <Your Name>, <Your Email> and <Your Mobile Number>
+	And User fills the form enquire now form with <Your Name>, <Your Email> and <Your Mobile Number>
 	Then User will click on send request1
 	
 	Examples:

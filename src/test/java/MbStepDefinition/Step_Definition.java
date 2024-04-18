@@ -203,7 +203,7 @@ public class Step_Definition {
 	}
 
 	@Then("User clicks on get free estimate")
-	public void user_clicks_on_get_free_estimate() {
+	public void user_clicks_on_get_free_estimate() throws InterruptedException {
 	    h1.clickGetFreeEstimate();
 	    String actual = h1.messageDisplayed3();
 	    String expected = "Estimated Cost";
@@ -235,7 +235,7 @@ public class Step_Definition {
 		h1.clickEnquireNowBtn0();
 	}
 
-	@And("^User fills the enquire now form with (.*), (.*) and (.*)$")
+	@And("^User fills the form enquire now form with (.*), (.*) and (.*)$")
 	public void user_fills_the_enquire_now_form_with_and(String yourName, String yourEmail, String yourMobNumber) {
 		h1.fillEnquireNowForm1(yourName, yourEmail, yourMobNumber);
 	}

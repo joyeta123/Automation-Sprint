@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="25.356" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Magicbricks Property Services" name="Rent Receipt form - Example #1.1" time="24.984">
+<testsuite name="Cucumber" time="75.359" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Magicbricks Property Services" name="Rent Receipt form - Example #1.1" time="74.874">
 <system-out><![CDATA[
 Given User is on Magicbricks homepage.......................................passed
 And Hover on property services..............................................passed
